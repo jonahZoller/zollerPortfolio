@@ -1,102 +1,139 @@
+form{
+  display: flex;
+  flex-direction: column;
+  padding-left: 1em;
+  width: 80%;
+  margin-bottom: 0.5em;
+}
+/* applies css to both selectors */
+input,textarea{
+  margin-bottom: .5em;
+}
+
+form button{
+  padding: .5em;
+}
+
 body{
-    background-color: #464866;
+  background-color: #464866;
 }
 
 nav{
-    margin-bottom: 1em;
+  margin-bottom: 1em;
 }
 
 nav a{
-    text-decoration: none;
-    margin-right: 2em;
-    float: right;
-    color: #AAABB8;
+  text-decoration: none;
+  margin-right: 2em;
+  float: right;
+  color: #AAABB8;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: block;
+  text-decoration: none;
 }
 
 #navigation{
-    text-decoration: none;
-    margin-right: 2em;
-    float: right;
-    color: #AAABB8;
+  text-decoration: none;
+  margin-right: 2em;
+  float: right;
+  color: #AAABB8;
 }
 
 
 nav a:hover{
-    color: aquamarine;
+  color: aquamarine;
 }
 
 
 h4{
-    display: inline;
-    float: right;
+  display: inline;
+  float: right;
 }
 
 h1{
-    display: inline;
-    font-size: xx-large;
+  display: inline;
+  font-size: xx-large;
 }
 
 
 div img{
-    border-style: solid;
-    border-width: 2px;
-    border-color: #AAABB8;
-    margin: 2em;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #AAABB8;
+  margin: 2em;
 }
 
 main{
-    margin-right: 2em;
-    margin-top: 2em;
+  margin-right: 2em;
+  margin-top: 2em;
 }
 
 iframe{
-    width: 600px; 
-    height: 600px;
-    padding: 1em;
+  width: 600px; 
+  height: 600px;
+  padding: 1em;
 }
 
 p a{
-    text-decoration: none;
-    color: #f2f2f2;
+  text-decoration: none;
+  color: #f2f2f2;
 }
 
 p a:hover{
-    text-decoration: none;
-    color: aquamarine;
+  text-decoration: none;
+  color: aquamarine;
 }
 
 #item{
-    width: 600px; 
-    height: 600px;
-    padding: 1em;
+  width: 600px; 
+  height: 600px;
+  padding: 1em;
 }
 
 footer {
-    text-align: center;
-    padding: 3px;
-    background-color: #25274D;
-    color: white;
+  text-align: center;
+  padding: 3px;
+  background-color: #25274D;
+  color: white;
+}
+
+#me{
+  border-style: solid;
+  border-width: 2px;
+  border-color: #AAABB8;
+  margin: 2em;
+
 }
 
 #homehero{
-    background: url(img/homehero.jpg);
+  background: url(img/homehero.jpg);
 
 }
 
 #entry{
-    background-color: #25274D;
+  background-color: #25274D;
 }
 
 #text{
-    background-color: #25274D;
-    color: #AAABB8;
-    font-weight: bold;
+  background-color: #25274D;
+  color: #AAABB8;
+  font-weight: bold;
+}
+
+#about{
+  background-color: #25274D;
+  color: #AAABB8;
+  font-weight: bold;
 }
 
 #projects{
-    width: 118em;
-    height: 40em;
-    padding: 0em;
+  width: 118em;
+  height: 40em;
+  padding: 0em;
+}
+
+#aboutme{
+  padding: 2em;
 }
 
 /*SLIDESHOW CSS*/
@@ -107,43 +144,98 @@ img {vertical-align: middle;}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
+max-width: 1000px;
+position: relative;
+margin: auto;
 }
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+background-color: rgba(0,0,0,0.8);
 }
 
 /* Caption text */
 .text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
+color: #f2f2f2;
+font-size: 15px;
+padding: 8px 12px;
+position: absolute;
+bottom: 8px;
+width: 100%;
+text-align: center;
 }
 
 .active, .dot:hover {
-  background-color: #717171;
+background-color: #717171;
 }
 
 /* Fading animation */
 .fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
+animation-name: fade;
+animation-duration: 1.5s;
 }
 
 @keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+from {opacity: .4} 
+to {opacity: 1}
 }
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
+.prev, .next,.text {font-size: 11px}
+}
+
+@media(min-width:1024px){
+
+  nav{
+    top:0;
+    left: 0;
+    text-align: right;
+    background-color: #FFF;
+    padding: .5em;
+    padding-right: 0;
+    margin: 0;
+    width: 100%;
+    z-index: 9999;
+
+}
+
+}
+
+@media(min-width:600px){
+
+  
+  nav{
+    top:0;
+    left: 0;
+    text-align: right;
+    background-color: #FFF;
+    padding: .5em;
+    padding-right: 0;
+    margin: 0;
+    width: 100%;
+    z-index: 9999;
+
+}
+}
+
+@media(max-width:600px){
+  nav{
+    top:0;
+    left: 0;
+    text-align: right;
+    background-color: #FFF;
+    padding: .5em;
+    padding-right: 0;
+    margin: 0;
+    width: 100%;
+    z-index: 9999;
+
+}
+
+nav a{
+  display: block;
+  text-decoration: none;
+}
+
 }

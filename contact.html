@@ -16,24 +16,19 @@
             </h1>
         </nav>
     <body>
-        <main>
-            <form>
-                <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">Email address</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                </div>
-                <div class="mb-3">
-                  <label for="exampleInputPassword1" class="form-label">Password</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1">
-                </div>
-                <div class="mb-3 form-check">
-                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-              </form>
-        </main>
+        <form method="post" action="https://webdevbasics.net/scripts/yoga.php">
+            <!-- label for = "id" -->
+            <label for="myName">Name:</label>
+            <input id="myName" placeholder="Name Please" type="text" required>
+            <label for="myEmail">E-mail:</label>
+            <!-- email fields look for @ and dot domain on the end -->
+            <input id="myEmail" type="email" placeholder="Email Please" required>
+            <label for="myRefer">How did you find this portfolio? </label>
+            <input id="myRefer" list="referral" required>
+            <label for="myComments">Comments:</label>
+            <textarea id="myComments" cols="20" rows="2" required></textarea>
+            <button id="mySubmit">Send Now</button>
+        </form>
     </body>
     <footer>
         Jonah Zoller 2023 © Bander Productions
